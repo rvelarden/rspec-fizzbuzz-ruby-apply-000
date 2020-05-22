@@ -1,8 +1,8 @@
 require_relative './spec_helper.rb'
 # We are missing a 'require_relative' here. Check README.md for instructions and an explanation!
-number = gets.strip
 
-fizzbuzz(number)
+
+def fizzbuzz(number)
 if number % 3 == 0
 puts "Fizz"
 elsif number % 3 == 0
@@ -11,7 +11,7 @@ elsif number % 3 == 0 && number % 5 == 0
 puts "FizzBuzz"
 else
 puts nil
-end 
+end
 
 
 describe "fizzbuzz" do
