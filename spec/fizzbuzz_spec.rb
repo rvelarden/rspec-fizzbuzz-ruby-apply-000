@@ -3,15 +3,15 @@ require_relative './spec_helper.rb'
 number = gets.strip
 
 fizzbuzz(number)
-if number == number / 3
+if number % 3 == 0
 puts "Fizz"
-elseif number == number / 5
+elsif number % 3 == 0
 puts "Buzz"
-elseif number == number / 3 && 5
+elsif number % 3 == 0 && number % 5 == 0
 puts "FizzBuzz"
-else number == number != 3 || 5
+else
 puts nil
-
+end 
 
 
 describe "fizzbuzz" do
