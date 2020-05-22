@@ -1,11 +1,16 @@
 require_relative './spec_helper.rb'
 # We are missing a 'require_relative' here. Check README.md for instructions and an explanation!
-fizzbuzz(name)
+fizzbuzz(number)
+if number == number / 3
 puts "Fizz"
+elseif number == number / 5
 puts "Buzz"
+elseif number == number / 3 && 5
 puts "FizzBuzz"
+else number == number != / 3 || 5
 puts nil
-name = gets.strip
+
+number = gets.strip
 
 describe "fizzbuzz" do
   it 'returns "Fizz" when the number is divisible by 3' do
