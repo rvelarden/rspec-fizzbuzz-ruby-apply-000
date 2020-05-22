@@ -9,7 +9,7 @@ elseif number == number / 5
 puts "Buzz"
 elseif number == number / 3 && 5
 puts "FizzBuzz"
-else number == number != / 3 || 5
+else number == number != 3 || 5
 puts nil
 
 
